@@ -1,0 +1,58 @@
+@import url("https://use.typekit.net/zhm2hsd.css");
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFBFA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fc9e9e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d68484;
+}
+
+body {
+  background: #FFFBFA;
+}
+
+#Top {
+  position: fixed;
+  margin-left: 90vw;
+  margin-top: 70vh;
+  scale: 0.8;
+  border: none;
+  background-color: transparent;
+  filter: drop-shadow(1px 3px 8px rgba(0, 0, 0, 0.2));
+  transition: position 0.25 ease-in-out;
+  opacity: 0;
+  transition: opacity 0.5 ease-in-out;
+  cursor: pointer;
+}
+
+#Return {
+  position: fixed;
+  margin-left: 90vw;
+  margin-top: 85vh;
+  scale: 0.8;
+  border: none;
+  background-color: transparent;
+  filter: drop-shadow(1px 3px 8px rgba(0, 0, 0, 0.2));
+  transition: position 0.25 ease-in-out;
+  cursor: pointer;
+}
+
+#GT_imgs {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 0px;
+}/*# sourceMappingURL=GT.css.map */

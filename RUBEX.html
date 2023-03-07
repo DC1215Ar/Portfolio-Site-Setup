@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUBEX Project</title>
+    <link rel="stylesheet" href="css/RUBEX.css">
+    <link rel="icon" href="favicon.ico"/>
+</head>
+<body>
+
+    <button type="submit" onclick="scrolling();"  id="Top">
+        <img src="images/Top.svg" alt="#">
+    </button>
+
+    <button type="submit" onclick="location.href = 'index.html';"  id="Return">
+        <img src="images/Return.svg" alt="#">
+    </button>
+
+    <div id="RUBEX_imgs">
+
+        <img src="RUBEX images/R1.jpg" alt="#">
+        <img src="RUBEX images/R2.jpg" alt="#">
+        <img src="RUBEX images/R3.jpg" alt="#">
+        <img src="RUBEX images/R4.jpg" alt="#">
+        <img src="RUBEX images/R5.jpg" alt="#">
+        <img src="RUBEX images/R6.jpg" alt="#">
+        <img src="RUBEX images/R7.jpg" alt="#">
+        <img src="RUBEX images/R8.jpg" alt="#">
+        <img src="RUBEX images/R9.jpg" alt="#">
+        <img src="RUBEX images/R10.jpg" alt="#">
+
+    </div>
+    
+    <script>
+        function scrolling(){
+        window.scrollTo(0,0);
+        }
+    </script>
+
+    <script>
+
+        const Upp = document.querySelector("Top");
+
+        window.addEventListener("scroll", () => {
+        if (window.scrollY > 800) {
+            document.getElementById("Top").style.opacity = 100;
+            document.getElementById("Top").style.transition = 0.5;
+        } else {
+            document.getElementById("Top").style.opacity = 0;
+            document.getElementById("Top").style.transition = 0.5;
+        }
+        });
+        
+    </script>
+</body>
+</html>

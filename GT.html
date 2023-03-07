@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gull Travels Project</title>
+    <link rel="stylesheet" href="css/GT.css">
+    <link rel="icon" href="favicon.ico"/>
+</head>
+<body>
+
+    <button type="submit" onclick="scrolling();"  id="Top">
+        <img src="images/Top.svg" alt="#">
+    </button>
+
+    <button type="submit" onclick="location.href = 'index.html';"  id="Return">
+        <img src="images/Return.svg" alt="#">
+    </button>
+
+    <div id="GT_imgs">
+
+        <img src="GT images/GT1-100.jpg" alt="#">
+        <img src="GT images/GT2-100.jpg" alt="#">
+        <img src="GT images/GT3-100.jpg" alt="#">
+        <img src="GT images/GT4-100.jpg" alt="#">
+        <img src="GT images/GT5-100.jpg" alt="#">
+        <img src="GT images/GT6-100.jpg" alt="#">
+        <img src="GT images/GT7-100.jpg" alt="#">
+        <img src="GT images/GT8-100.jpg" alt="#">
+        <img src="GT images/GT9-100.jpg" alt="#">
+        <img src="GT images/GT10-100.jpg" alt="#">
+        <img src="GT images/GT11-100.jpg" alt="#">
+        <img src="GT images/GT12-100.jpg" alt="#">
+        <img src="GT images/GT13-100.jpg" alt="#">
+
+    </div>
+    
+    <script>
+        function scrolling(){
+        window.scrollTo(0,0);
+        }
+    </script>
+
+    <script>
+
+        const Upp = document.querySelector("Top");
+
+        window.addEventListener("scroll", () => {
+        if (window.scrollY > 800) {
+            document.getElementById("Top").style.opacity = 100;
+            document.getElementById("Top").style.transition = 0.5;
+        } else {
+            document.getElementById("Top").style.opacity = 0;
+            document.getElementById("Top").style.transition = 0.5;
+        }
+        });
+        
+    </script>
+</body>
+</html>

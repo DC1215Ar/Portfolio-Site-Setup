@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws Project</title>
+    <link rel="stylesheet" href="css/Paws.css">
+    <link rel="icon" href="favicon.ico"/>
+</head>
+<body>
+
+    <button type="submit" onclick="scrolling();"  id="Top">
+        <img src="images/Top.svg" alt="#">
+    </button>
+
+    <button type="submit" onclick="location.href = 'index.html';"  id="Return">
+        <img src="images/Return.svg" alt="#">
+    </button>
+
+    <div id="Paws_imgs">
+
+        <img src="Paws images/Paws 1-100.jpg" alt="#">
+        <img src="Paws images/Paws 2-100.jpg" alt="#">
+        <img src="Paws images/Paws 3-100.jpg" alt="#">
+        <img src="Paws images/Paws 4-100.jpg" alt="#">
+        <img src="Paws images/Paws 5-100.jpg" alt="#">
+        <img src="Paws images/Paws 6-100.jpg" alt="#">
+        <img src="Paws images/Paws 7-100.jpg" alt="#">
+        <img src="Paws images/Paws 8-100.jpg" alt="#">
+        <img src="Paws images/Paws 9-100.jpg" alt="#">
+        <img src="Paws images/Paws 10-100.jpg" alt="#">
+        <img src="Paws images/Paws 11-100.jpg" alt="#">
+        <img src="Paws images/Paws 12-100.jpg" alt="#">
+        <img src="Paws images/Paws 13-100.jpg" alt="#">
+        <img src="Paws images/Paws 14-100.jpg" alt="#">
+        <img src="Paws images/Paws 15-100.jpg" alt="#">
+        <img src="Paws images/Paws 16-100.jpg" alt="#">
+        <img src="Paws images/Paws 17-100.jpg" alt="#">
+        <img src="Paws images/Paws 18-100.jpg" alt="#">
+        <img src="Paws images/Paws 19-100.jpg" alt="#">
+        <img src="Paws images/Paws 20-100.jpg" alt="#">
+
+    </div>
+    
+    <script>
+        function scrolling(){
+        window.scrollTo(0,0);
+        }
+    </script>
+
+    <script>
+
+        const Upp = document.querySelector("Top");
+
+        window.addEventListener("scroll", () => {
+        if (window.scrollY > 800) {
+            document.getElementById("Top").style.opacity = 100;
+            document.getElementById("Top").style.transition = 0.5;
+        } else {
+            document.getElementById("Top").style.opacity = 0;
+            document.getElementById("Top").style.transition = 0.5;
+        }
+        });
+        
+    </script>
+</body>
+</html>
