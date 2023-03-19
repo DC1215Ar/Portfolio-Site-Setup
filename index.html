@@ -5,514 +5,408 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amal's Portfolio</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="icon" href="favicon.ico"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+    <script src="Js/Contact.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("S6Vs5tPEzaQ_jhOU5");
+        })();
+    </script>
 </head>
 <body>
 
-    <header id="header">
-            <div class="Logo_and_title">
+    <div id="Title">
 
-                <div class="img-logo">
-                    <a href="index.html"> <img src="images/ARP.svg" alt="#" id="Logo"></a>
-                </div>
-    
-                <a href="index.html" class="logo_text">ARP.</a>
+        <div id="Logo_Name">
+
+            <a href="index.html"> 
+                <svg id="ARPLogo" onclick="open('index.html')" width="38" height="26" viewBox="0 0 38 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26.0295 5.84633H11.5078L14.8826 0H22.6542L26.0295 5.84633Z" fill="#FFF7E9"/>
+                <path d="M29.7492 12.2897H15.1001L14.7325 12.9262L14.4061 13.49L7.64252 25.2024L7.30876 25.7814H0L3.98701 18.8735L10.8154 7.04663H26.7251L29.7492 12.2897Z" fill="#FFF7E9"/>
+                <path d="M33.4732 18.737H21.5386L21.1254 19.4502L17.4721 25.7791H8.69531L15.7904 13.4888H30.4463L33.4732 18.737Z" fill="#FFF7E9"/>
+                <path d="M23.4678 19.9384L26.8425 25.7819H37.5401L34.1665 19.9384H23.4678Z" fill="#FFF7E9"/>
+                </svg>
+            </a>
             
-                <nav>
-                    <ul>
-                        <li><a onclick="scrolling()" id="ref1">START</a></li>
-                        <li><a href="#intro" id="ref2">INTRODUCTION</a></li>
-                        <li><a href="#work" id="ref3">WORK</a></li>
-                    </ul>
-                </nav>
-            </div>
 
-            <div class="Social">
-
-                <div class="Linkedin">
-                    <a href="https://www.linkedin.com/in/amal-raj-putheril/" id="LI"> 
-                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.7837 15.1407H13.1556V11.0181C13.1556 10.035 13.1354 8.7698 11.7874 8.7698C10.4154 8.7698 10.2063 9.83954 10.2063 10.9458V15.1407H7.5697V6.66288H10.0936V7.81797H10.1274C10.3809 7.38585 10.7466 7.03046 11.1859 6.78956C11.6251 6.54867 12.1214 6.43127 12.622 6.44984C15.2879 6.44984 15.7811 8.2043 15.7811 10.4891V15.1407H15.7837ZM4.5976 5.50258C4.2955 5.50245 4.00022 5.41275 3.74908 5.24483C3.49795 5.07691 3.30223 4.83831 3.18668 4.55917C3.07113 4.28004 3.04093 3.97292 3.0999 3.67662C3.15887 3.38033 3.30436 3.10817 3.51798 2.89456C3.7316 2.68094 4.00376 2.53545 4.30005 2.47648C4.59634 2.41751 4.90346 2.44771 5.1826 2.56326C5.46173 2.67881 5.70034 2.87452 5.86826 3.12566C6.03618 3.37679 6.12587 3.67208 6.126 3.97418C6.12626 4.17496 6.0869 4.37383 6.01018 4.55938C5.93346 4.74493 5.82089 4.91352 5.67892 5.05549C5.53694 5.19747 5.36835 5.31004 5.1828 5.38676C4.99725 5.46348 4.79839 5.50283 4.5976 5.50258ZM5.91687 15.1407H3.27899V6.66288H5.91752L5.91687 15.1407ZM17.0997 9.54276e-05H1.95777C1.78763 -0.00196998 1.61875 0.0295103 1.46078 0.0927375C1.30281 0.155965 1.15885 0.249699 1.03712 0.368585C0.915387 0.487472 0.818277 0.629179 0.751334 0.78561C0.684391 0.942041 0.648929 1.11013 0.646973 1.28027L0.646973 16.4873C0.648929 16.6575 0.684391 16.8256 0.751334 16.982C0.818277 17.1384 0.915387 17.2801 1.03712 17.399C1.15885 17.5179 1.30281 17.6116 1.46078 17.6749C1.61875 17.7381 1.78763 17.7696 1.95777 17.7675H17.0977C17.4416 17.771 17.773 17.6384 18.0195 17.3986C18.266 17.1588 18.4077 16.8312 18.4137 16.4873V1.28027C18.4077 0.9364 18.266 0.608847 18.0195 0.369035C17.773 0.129223 17.4416 -0.00339617 17.0977 9.54276e-05H17.0997Z" fill="#E46C6C"/>
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="Behance">
-                    <a href="https://www.behance.net/Amal_RP_UX" id="BE"> 
-                        <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.19363 0.553118C7.82386 0.546326 8.45297 0.607926 9.06991 0.736838C9.58654 0.843134 10.0787 1.04533 10.5208 1.33295C10.9254 1.60775 11.2492 1.9856 11.4589 2.42745C11.6946 2.96022 11.8082 3.53899 11.7912 4.12133C11.8135 4.76331 11.6409 5.39702 11.2961 5.93898C10.9224 6.46065 10.4154 6.8724 9.82825 7.13121C10.6249 7.32666 11.3256 7.80002 11.8042 8.46611C12.2514 9.1505 12.4787 9.95519 12.4557 10.7724C12.4769 11.4253 12.3394 12.0736 12.055 12.6617C11.7901 13.1871 11.401 13.64 10.9214 13.981C10.4274 14.3276 9.87441 14.5815 9.28947 14.7302C8.68096 14.8949 8.05334 14.9783 7.42295 14.9784H0.413574V0.560285H7.19363V0.553118ZM16.9679 12.4402C17.2199 12.6616 17.5131 12.8311 17.8307 12.9389C18.1483 13.0468 18.4841 13.091 18.8188 13.0689C19.3516 13.0834 19.8756 12.9308 20.3172 12.6324C20.6685 12.4219 20.9374 12.0978 21.0795 11.7138H23.6066C23.3244 12.8007 22.6666 13.7527 21.7499 14.4012C20.8491 14.9637 19.8015 15.246 18.74 15.2123C17.9818 15.2237 17.2284 15.091 16.5197 14.8214C15.8873 14.5723 15.3146 14.1927 14.8389 13.7073C14.3735 13.2088 14.0154 12.6201 13.7867 11.9776C13.5356 11.2654 13.4123 10.5144 13.4225 9.75932C13.4152 9.01483 13.5478 8.2756 13.8134 7.58008C14.0543 6.92889 14.4263 6.33408 14.9064 5.83248C15.3864 5.33088 15.9644 4.93319 16.6044 4.66402C17.2892 4.37031 18.0288 4.22616 18.7739 4.2412C19.5793 4.21889 20.3779 4.39449 21.0997 4.75262C21.7378 5.07875 22.2928 5.54677 22.7219 6.12075C23.1579 6.71015 23.4704 7.38159 23.6405 8.09476C23.824 8.85555 23.8931 9.63942 23.8457 10.4206H16.3321C16.3042 11.1566 16.5515 11.8767 17.0259 12.4402L16.9477 12.4695L16.9679 12.4402ZM6.96104 12.4891C7.25857 12.491 7.55544 12.4606 7.84642 12.3985C8.11029 12.3458 8.36267 12.2465 8.59172 12.1053C8.80906 11.9642 8.98455 11.7673 9.09988 11.5353C9.2366 11.2421 9.30031 10.9203 9.28556 10.5971C9.31187 10.3028 9.26902 10.0063 9.16043 9.73146C9.05185 9.4566 8.88052 9.21091 8.66013 9.01401C8.17559 8.68155 7.59556 8.5168 7.0086 8.54494H3.57981V12.5027H6.96104V12.4734V12.4891ZM20.2579 6.96768C20.0423 6.76498 19.7872 6.60897 19.5085 6.50942C19.2298 6.40987 18.9336 6.36893 18.6383 6.38916C18.2453 6.37306 17.8542 6.45289 17.4989 6.62174C17.2181 6.75796 16.9711 6.9549 16.7757 7.19831C16.5992 7.41382 16.4688 7.66328 16.3927 7.93124C16.3254 8.15741 16.2818 8.38992 16.2624 8.62507H20.9159C20.8806 8.0168 20.6472 7.43678 20.2514 6.97355V6.98332L20.2579 6.96768ZM6.78514 6.36506C7.2807 6.38616 7.76958 6.24478 8.17737 5.96244C8.36795 5.80562 8.51702 5.60433 8.61143 5.37631C8.70584 5.14828 8.74271 4.90053 8.71876 4.6549C8.72504 4.3694 8.66482 4.08637 8.54286 3.82816C8.42397 3.62346 8.25607 3.45152 8.05424 3.32781C7.83687 3.20221 7.59844 3.11722 7.35063 3.07699C7.07993 3.02681 6.80506 3.0026 6.52976 3.00467H3.57004V6.36636H6.78514V6.36506ZM15.676 1.51993H21.5082V2.94083H15.676V1.51797V1.51993Z" fill="#E46C6C"/>
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="Email">
-                    <a href="Contact.html" id="E">
-                        <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.5144 11.3386L1.05519 1.75879C0.945644 2.01672 0.879796 2.29109 0.860352 2.57064V13.0353C0.88092 13.7109 1.15958 14.3529 1.63903 14.8294C2.11847 15.3058 2.76225 15.5804 3.43796 15.5967H21.5949C22.2524 15.5734 22.874 15.291 23.3242 14.8112C23.7744 14.3314 24.0166 13.693 23.9979 13.0353V2.57876C24.0092 2.31135 23.9763 2.04391 23.9005 1.78721L12.5144 11.3386Z" fill="#E46C6C"/>
-                            <path d="M12.5144 9.2034L22.9385 0.536954C22.5357 0.287022 22.0687 0.160056 21.5949 0.171624H3.43795C2.97529 0.160672 2.51909 0.281763 2.12276 0.520717L12.5144 9.2034Z" fill="#E46C6C"/>
-                            </svg>
-                    </a>
-                </div>
-            </div>
-    </header>
-
-    <div id="hero" class="Hero-Section">
-
-        <div class="image">
-            <img src="images/Amal img grp.png" alt="#">
+            <h4>ARP.</h4>
         </div>
 
-        <div class="Naming_list">
-            <div class="Name">Amal Raj Putheril</div>
-            <div class="Designation">UI/UX DESIGNER</div>
+        <div id="Social_Contact">
+
+            <svg id="Mail" width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.5144 11.3386L1.05519 1.75879C0.945644 2.01672 0.879796 2.29109 0.860352 2.57064V13.0353C0.88092 13.7109 1.15958 14.3529 1.63903 14.8294C2.11847 15.3058 2.76225 15.5804 3.43796 15.5967H21.5949C22.2524 15.5734 22.874 15.291 23.3242 14.8112C23.7744 14.3314 24.0166 13.693 23.9979 13.0353V2.57876C24.0092 2.31135 23.9763 2.04391 23.9005 1.78721L12.5144 11.3386Z" fill="#FFF7E9"/>
+                <path d="M12.5144 9.2034L22.9385 0.536954C22.5357 0.287022 22.0687 0.160056 21.5949 0.171624H3.43795C2.97529 0.160672 2.51909 0.281763 2.12276 0.520717L12.5144 9.2034Z" fill="#FFF7E9"/>
+            </svg>
+
+            <svg id="Linked" onclick="window.open('https://www.linkedin.com/in/amal-raj-putheril')" width="24" height="22" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.1614 18.2734H6.24218V6.51561H10.1614V8.47524C10.9969 7.41239 12.2638 6.77876 13.6153 6.74783C16.0458 6.76132 18.007 8.73919 18 11.1697V18.2734H14.0807V11.6596C13.924 10.5648 12.985 9.75251 11.8791 9.75488C11.3953 9.77017 10.9387 9.98198 10.6145 10.3414C10.2904 10.7009 10.1268 11.1769 10.1614 11.6596V18.2734ZM4.28254 18.2734H0.363281V6.51561H4.28254V18.2734ZM2.32291 4.55598C1.24064 4.55598 0.363281 3.67862 0.363281 2.59635C0.363281 1.51408 1.24064 0.636719 2.32291 0.636719C3.40519 0.636719 4.28254 1.51408 4.28254 2.59635C4.28254 3.11608 4.07608 3.61452 3.70858 3.98202C3.34108 4.34952 2.84264 4.55598 2.32291 4.55598Z" fill="#FFF7E9"/>
+            </svg>
+
+            <svg id="Behance" onclick="window.open('https://www.behance.net/Amal_RP_UX')" width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.19363 0.553118C7.82386 0.546326 8.45297 0.607926 9.06991 0.736838C9.58654 0.843134 10.0787 1.04533 10.5208 1.33295C10.9254 1.60775 11.2492 1.9856 11.4589 2.42745C11.6946 2.96022 11.8082 3.53899 11.7912 4.12133C11.8135 4.76331 11.6409 5.39702 11.2961 5.93898C10.9224 6.46065 10.4154 6.8724 9.82825 7.13121C10.6249 7.32666 11.3256 7.80002 11.8042 8.46611C12.2514 9.1505 12.4787 9.95519 12.4557 10.7724C12.4769 11.4253 12.3394 12.0736 12.055 12.6617C11.7901 13.1871 11.401 13.64 10.9214 13.981C10.4274 14.3276 9.87441 14.5815 9.28947 14.7302C8.68096 14.8949 8.05334 14.9783 7.42295 14.9784H0.413574V0.560285H7.19363V0.553118ZM16.9679 12.4402C17.2199 12.6616 17.5131 12.8311 17.8307 12.9389C18.1483 13.0468 18.4841 13.091 18.8188 13.0689C19.3516 13.0834 19.8756 12.9308 20.3172 12.6324C20.6685 12.4219 20.9374 12.0978 21.0795 11.7138H23.6066C23.3244 12.8007 22.6666 13.7527 21.7499 14.4012C20.8491 14.9637 19.8015 15.246 18.74 15.2123C17.9818 15.2237 17.2284 15.091 16.5197 14.8214C15.8873 14.5723 15.3146 14.1927 14.8389 13.7073C14.3735 13.2088 14.0154 12.6201 13.7867 11.9776C13.5356 11.2654 13.4123 10.5144 13.4225 9.75932C13.4152 9.01483 13.5478 8.2756 13.8134 7.58008C14.0543 6.92889 14.4263 6.33408 14.9064 5.83248C15.3864 5.33088 15.9644 4.93319 16.6044 4.66402C17.2892 4.37031 18.0288 4.22616 18.7739 4.2412C19.5793 4.21889 20.3779 4.39449 21.0997 4.75262C21.7378 5.07875 22.2928 5.54677 22.7219 6.12075C23.1579 6.71015 23.4704 7.38159 23.6405 8.09476C23.824 8.85555 23.8931 9.63942 23.8457 10.4206H16.3321C16.3042 11.1566 16.5515 11.8767 17.0259 12.4402L16.9477 12.4695L16.9679 12.4402ZM6.96104 12.4891C7.25857 12.491 7.55544 12.4606 7.84642 12.3985C8.11029 12.3458 8.36267 12.2465 8.59172 12.1053C8.80906 11.9642 8.98455 11.7673 9.09988 11.5353C9.2366 11.2421 9.30031 10.9203 9.28556 10.5971C9.31187 10.3028 9.26902 10.0063 9.16043 9.73146C9.05185 9.4566 8.88052 9.21091 8.66013 9.01401C8.17559 8.68155 7.59556 8.5168 7.0086 8.54494H3.57981V12.5027H6.96104V12.4734V12.4891ZM20.2579 6.96768C20.0423 6.76498 19.7872 6.60897 19.5085 6.50942C19.2298 6.40987 18.9336 6.36893 18.6383 6.38916C18.2453 6.37306 17.8542 6.45289 17.4989 6.62174C17.2181 6.75796 16.9711 6.9549 16.7757 7.19831C16.5992 7.41382 16.4688 7.66328 16.3927 7.93124C16.3254 8.15741 16.2818 8.38992 16.2624 8.62507H20.9159C20.8806 8.0168 20.6472 7.43678 20.2514 6.97355V6.98332L20.2579 6.96768ZM6.78514 6.36506C7.2807 6.38616 7.76958 6.24478 8.17737 5.96244C8.36795 5.80562 8.51702 5.60433 8.61143 5.37631C8.70584 5.14828 8.74271 4.90053 8.71876 4.6549C8.72504 4.3694 8.66482 4.08637 8.54286 3.82816C8.42397 3.62346 8.25607 3.45152 8.05424 3.32781C7.83687 3.20221 7.59844 3.11722 7.35063 3.07699C7.07993 3.02681 6.80506 3.0026 6.52976 3.00467H3.57004V6.36636H6.78514V6.36506ZM15.676 1.51993H21.5082V2.94083H15.676V1.51797V1.51993Z" fill="#FFF7E9"/>
+            </svg>
         </div>
     </div>
 
-    <div id="intro" class="intro">
+    <div id="Hero">
 
-        <div class="Intro_container">
-            <div class="ABOUT">
-                <div class="about_text">
-                    <span class="about_me_h1">
-                        ABOUT ME
-                    </span>
-        
-                    <span class="about_me_para">
-                        I'm a Visual designer based in Kerala, India. I did my undergrad in Communication Design at IIITDM Jabalpur.
-        
-                        <br/><br/>I've been keen about technology for the longest time and found that I was best at designing interactive environments that users could utilize with great efficiency.
+        <script>
+            var animation = bodymovin.loadAnimation({
+                container: document.getElementById('Hero'),
+                path: 'Anim/HeroAnim.json',
+                render: 'svg',
+                loop: true,
+                autoplay: true,
+                name: 'hero animation'
+            })
+        </script>
+    </div>
 
-                        <br/><br/>My other interests lie in gaming, and creating 3D models.
-                    </span>
-        
-                    <div class="resume">
-                        <button id="RES" type="submit" onclick="window.open('Resume.pdf')" onmousedown="">RESUME</button>
-                    </div>
-                </div>
+    <div id="About_me">
 
-                <div class="Exp_Sliders">
+        <h2>WHO AM I</h2>
+
+        <span class="about_me_para">
+            I'm a Visual designer based in Kerala, India. I did my undergrad in Communication Design at IIITDM Jabalpur.
+
+            <br/><br/>I've been keen about technology for the longest time and found that I was best at designing interactive environments that users could utilize with great efficiency.
+
+            <br/><br/>My other interests lie in gaming, and creating 3D models.
+        </span>
+
+        <div class="resume">
+            <button id="RES" type="submit" onclick="window.open('Resume.pdf')" onmousedown="">RESUME</button>
+        </div>
+
+        <div class="Exp_Sliders">
                 
-                    <div class="DP_sliders">
-                        <span class="DP">DESIGN PROCESS</span>
-                        <div class="DP_bar"> <img src="images/DP bar.png" alt="#"></div>
-                    </div>
-        
-                    <div class="BE_sliders">
-                        <span class="BE">BRANDING EXPERIENCE</span>
-                        <div class="BE_bar"> <img src="images/BE bar.png" alt="#"></div>
-                    </div>
-        
-                    <div class="IDE_sliders">
-                        <span class="IDE">INTERFACE DESIGN EXPERIENCE</span>
-                        <div class="IDE_bar"> <img src="images/IDE bar.png" alt="#"></div>
-                    </div>
-                </div>
+            <div class="sliders">
+                <span class="Slider-title">DESIGN PROCESS</span>
+                <div id="progress-bar1"></div>
             </div>
 
-            <div class="expertise">
-                <div class="Ex_Text">
-                    <span class="EX_title">
-                        EXPERTISE
-                    </span>
-        
-                    <span class="ex_para">
-                        My specialty and areas expertise. I have undertaken multiple projects in these fields and have also attended various workshops and seminars regarding the same.
-                    </span>
-                </div>
+            <div class="sliders">
+                <span class="Slider-title">BRANDING EXPERIENCE</span>
+                <div id="progress-bar2"></div>
+            </div>
 
-                <div class="EXP_Cards">
-                    <div class="Exp_card1">
-                        <img src="images/UX icon.svg" alt="#">
-                        <span class="UX_projects">
-                            UX Projects 
-                        </span>
-                        <span class="UX_project_num">
-                            12 projects
-                        </span>
-                    </div>
-                    
-                    <div class="Exp_card2">
-                        <img src="images/Interface icon.svg" alt="#">
-                        <span class="UI_projects">
-                            UI Projects 
-                    </span>
-                    <span class="UI_project_num">
-                            8 projects
-                    </span>
-                    </div>
-                    
-                    <div class="Exp_card3">
-                        <img src="images/Branding icon.svg" alt="#">
-                        <span class="B_projects">
-                            Branding Projects 
-                    </span>
-                    <span class="UI_project_num">
-                            8 projects
-                    </span>
-                    </div>
-                </div>         
+            <div class="sliders">
+                <span class="Slider-title">INTERFACE DESIGN EXPERIENCE</span>
+                <div id="progress-bar3"></div>
             </div>
         </div>
     </div>
 
-    <div id="work" class="work">
-        <div id="Carl" class="Carousel">
-            <div class="CSCards">
-                <div id="C1" class="Card">
-                    <div class="Card1_text">
-                        <h3 class="B_M">BRANDING | MOBILE APPLICATION</h3>
-                        <h2 class="RUBEX">RUBEX</h2>
-                        <span class="Rubex_text">Creating a new brand image and upgrading the user experience of the upcoming RUBEX mobile app.</span>
-                        <div class="extras">
+    <div id="work">
 
-                            <div class="extra-sub">
+        <h2>WORK</h2>
 
-                                <div id="PL1">
-                                    <h4>Project Length :</h4>
-                                    Approx. 5 weeks
-                                </div>
-    
-                                <div id="Role1">
-                                    <h4>Role :</h4>
-                                    UI/UX designer
-                                </div>
+        <div class="proj" id="RUBEX">
+            <button class="Project_view" onclick="location.href = 'RUBEX.html'">VIEW</button>
+        </div>
 
-                            </div>
+        <div class="proj" id="Paws">
+            <button class="Project_view" onclick="location.href = 'Paws.html'">VIEW</button>
+        </div>
 
-                            <div id="Cont1">
-                                <h4>Contribution :</h4>
-                                User Research, Market research, Interface overhaul, Re-branding
-                            </div>
+        <div class="proj" id="GT">
+            <button class="Project_view" onclick="location.href = 'GT.html'">VIEW</button>
+        </div>
 
-                            <div id="Comp1">
-                                <h4>Company :</h4>
-                                Widget EduTech Pvt Ltd
-                            </div>
+        <div class="proj" id="TSY">
+            <button class="Project_view" onclick="location.href = 'TSY.html'">VIEW</button>
+        </div>
 
-                        </div>
+    </div>
 
-                        <a href="RUBEX.html" class="open-project" id="O1">
-                            Open Project
-                            <div class="chevrons">
-                                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.3413 8.6149L1.96937 0.158203L0 2.14785L6.40672 8.62053L0 15.0834L1.96937 17.073L10.3413 8.6149Z" fill="#7CA1FF"/>
-                                </svg>
-                                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.3413 8.6149L1.96937 0.158203L0 2.14785L6.40672 8.62053L0 15.0834L1.96937 17.073L10.3413 8.6149Z" fill="#7CA1FF"/>
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
+    <div id="end">
 
-                    <div class="RUBEX_img_grp">
-                        <img id="Rphone" src="images/RUBEX Phone group.png" alt="#">
-                        <div class="RUBEX_screens">
-                            <img id="RS1" class="Rscreens" src="images/RUBEX Phone group 4.png" alt="#">
-                            <img id="RS2" class="Rscreens" src="images/RUBEX Phone group 3.png" alt="#">
-                            <img id="RS3" class="Rscreens" src="images/RUBEX Phone group 2.png" alt="#">
-                            <img id="RS4" class="Rscreens" src="images/RUBEX Phone group 1.png" alt="#">
-                        </div>
-                    </div>
-                </div>
+        <div id="LND">
 
-                <div id="C2" class="Card">
-                    <div class="Card2_text">
-                        <h3 class="Br">BRANDING</h3>
-                        <h2 class="Paws">Paws</h2>
-                        <span class="Paws_text">Understanding the workflow of designing a logo and brand image of a company through the creation of 'Paws'.</span>
-                        <div class="extras">
+            <svg id="ARPLogo" width="38" height="26" viewBox="0 0 38 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26.0295 5.84633H11.5078L14.8826 0H22.6542L26.0295 5.84633Z" fill="#FFF7E9"/>
+                <path d="M29.7492 12.2897H15.1001L14.7325 12.9262L14.4061 13.49L7.64252 25.2024L7.30876 25.7814H0L3.98701 18.8735L10.8154 7.04663H26.7251L29.7492 12.2897Z" fill="#FFF7E9"/>
+                <path d="M33.4732 18.737H21.5386L21.1254 19.4502L17.4721 25.7791H8.69531L15.7904 13.4888H30.4463L33.4732 18.737Z" fill="#FFF7E9"/>
+                <path d="M23.4678 19.9384L26.8425 25.7819H37.5401L34.1665 19.9384H23.4678Z" fill="#FFF7E9"/>
+            </svg>
 
-                            <div class="extra-sub">
+            <div id="N_D">
 
-                                <div id="PL2">
-                                    <h4>Project Length :</h4>
-                                    Approx. 2 weeks
-                                </div>
-    
-                                <div id="Role2">
-                                    <h4>Role :</h4>
-                                    UI designer
-                                </div>
-
-                            </div>
-
-                            <div id="Cont2">
-                                <h4>Contribution :</h4>
-                                User Research, Market research, Brand development
-                            </div>
-                            
-                        </div>
-
-                        <a href="Paws.html" class="open-project" id="O2">
-                            Open Project
-                            <div class="chevrons">
-                                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.3413 8.6149L1.96937 0.158203L0 2.14785L6.40672 8.62053L0 15.0834L1.96937 17.073L10.3413 8.6149Z" fill="#7CA1FF"/>
-                                </svg>
-                                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.3413 8.6149L1.96937 0.158203L0 2.14785L6.40672 8.62053L0 15.0834L1.96937 17.073L10.3413 8.6149Z" fill="#7CA1FF"/>
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="Paws_img_grp">
-                        <div class="Div1">
-                            <div class="Paws_Iphone">
-                                <img id="PBC" src="images/Paws Iphone x.png" alt="#">
-                                <div class="Sub_Div1">
-                                    <div class="Paws_letter">
-                                        <img id="PLetter" src="images/Paws 8,5x11_ Paper.png" alt="#">
-                                    </div>
-                                    <img id="PPad" src="images/Paws iPad Pro Mockup.png" alt="#">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="Div2">
-                            <img id="PBC" src="images/Paws Business Card.png" alt="#">
-                            <img id="PP" src="images/Pwas Pencil.png" alt="#">
-                        </div>
-                    </div>
-                </div>
-
-                <div id="C3" class="Card">
-                    <div class="Card3_text">
-                        <h3 class="Ma">MOBILE APPLICATION</h3>
-                        <h2 class="Gts">Gull Travels</h2>
-                        <span class="Gt_text">An exploration into developing an international travel app, the methodology followed wireframing and the final prototype.</span>
-                        <div class="extras">
-
-                            <div class="extra-sub">
-
-                                <div id="PL3">
-                                    <h4>Project Length :</h4>
-                                    Approx. 3 weeks
-                                </div>
-    
-                                <div id="Role3">
-                                    <h4>Role :</h4>
-                                    UI/UX designer
-                                </div>
-
-                            </div>
-
-                            <div id="Cont3">
-                                <h4>Contribution :</h4>
-                                User Research, Market research, Branding, Interface design
-                            </div>
-                            
-                        </div>
-
-                        <a href="GT.html" class="open-project" id="O3">
-                            Open Project
-                            <div class="chevrons">
-                                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.3413 8.6149L1.96937 0.158203L0 2.14785L6.40672 8.62053L0 15.0834L1.96937 17.073L10.3413 8.6149Z" fill="#7CA1FF"/>
-                                </svg>
-                                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.3413 8.6149L1.96937 0.158203L0 2.14785L6.40672 8.62053L0 15.0834L1.96937 17.073L10.3413 8.6149Z" fill="#7CA1FF"/>
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="GT_img_grp">
-                        <div class="Gr1">
-                            <img id="Sc1" src="images/GT Screen 1.png" alt="#">
-                            <div class="Gr11">
-                                <img id="Sc22" src="images/GT Screen 2-2.png" alt="#">
-                            </div>
-                        </div>
-
-                        <div class="Gr3">
-                            <div class="Gr31">
-                                <img id="Sc32" src="images/GT Screen 3-2.png" alt="#">
-                            </div>
-                            <div class="Gr32">
-                                <div class="GTphone">
-                                    <img id="GTP" src="images/GT phone.png" alt="#">
-                                </div>
-                                <div class="Gr321">
-                                    <img id="Sc12" src="images/GT Screen 1-2.png" alt="#">
-                                </div>
-                                
-                            </div>
-                        </div>
-
-                        <div class="Gr2">
-                            <img id="Sc2" src="images/GT Screen 2.png" alt="#">
-                            <div class="Gr21">
-                                <img id="Sc3" src="images/GT Screen 3.png" alt="#">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="C4" class="Card">
-                    <div class="Card4_text">
-                        <h3 class="Wb">WEBSITE</h3>
-                        <h2 class="TSY">Tri-Star Yachts</h2>
-                        <span class="TSY_text">Creating a website for reservation of luxury yachts while exploring the challenges of creating a website and individual interactions.</span>
-                        <div class="extras">
-
-                            <div class="extra-sub">
-
-                                <div id="PL4">
-                                    <h4>Project Length :</h4>
-                                    Approx. 2 weeks
-                                </div>
-    
-                                <div id="Role4">
-                                    <h4>Role :</h4>
-                                    UI/UX designer
-                                </div>
-
-                            </div>
-
-                            <div id="Cont4">
-                                <h4>Contribution :</h4>
-                                Market research, Branding, Interface design
-                            </div>
-                            
-                        </div>
-                        
-                        <a href="TSY.html" class="open-project" id="O4">
-                            Open Project
-                            <div class="chevrons">
-                                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.3413 8.6149L1.96937 0.158203L0 2.14785L6.40672 8.62053L0 15.0834L1.96937 17.073L10.3413 8.6149Z" fill="#7CA1FF"/>
-                                </svg>
-                                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.3413 8.6149L1.96937 0.158203L0 2.14785L6.40672 8.62053L0 15.0834L1.96937 17.073L10.3413 8.6149Z" fill="#7CA1FF"/>
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="TSY_img_grp">
-                        <img id="TSYPC" src="images/TSY PC.png" alt="#">
-                        <div class="subimages">
-                            <img id="TSYLap" src="images/TSY Lap.png" alt="#">
-                            <img id="TSYTab" src="images/TSY Tab.png" alt="#">
-                            <img id="TSYP" src="images/TSY phone.png" alt="#">
-                        </div>
-                    </div>
-                </div>
+                <h5>Amal Raj Putheril</h5>
+                <span>UI/UX Designer</span>
             </div>
+        </div>
+
+        <svg id="top" onclick="scrolling()" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.40299 13.425L0.98999 12.01L6.99999 5.999L13.01 12.01L11.597 13.423L6.99699 8.823L2.39699 13.423L2.40299 13.425ZM2.40299 8.001L0.98999 6.585L6.99999 0.574997L13.01 6.585L11.597 7.999L6.99699 3.399L2.39699 7.999L2.40299 8.001Z" fill="#FFF7E9"/>
+        </svg>
+    </div>
+
+    <div id="ContactOverlay">
+
+        <div id="Container">
+            
+
+            <div id="info">
+
+                <svg id="close" onclick="Close()" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.6472 0.576172L10.9238 9.29958L2.20036 0.576172L0 2.77653L8.72341 11.4999L0 20.2233L2.20036 22.4237L10.9238 13.7003L19.6472 22.4237L21.8475 20.2233L13.1241 11.4999L21.8475 2.77653L19.6472 0.576172Z" fill="#FFF7E9"/>
+                </svg>
+
+                <h2>Hey, feel free to reach out to me.</h2>
+                <span>Whether its to set up a website, design an app, or to conduct user/ market research. I'll work with you.</span>
+
+                <div id="Email">
+                        <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5144 11.3386L1.05519 1.75879C0.945644 2.01672 0.879796 2.29109 0.860352 2.57064V13.0353C0.88092 13.7109 1.15958 14.3529 1.63903 14.8294C2.11847 15.3058 2.76225 15.5804 3.43796 15.5967H21.5949C22.2524 15.5734 22.874 15.291 23.3242 14.8112C23.7744 14.3314 24.0166 13.693 23.9979 13.0353V2.57876C24.0092 2.31135 23.9763 2.04391 23.9005 1.78721L12.5144 11.3386Z" fill="#FFF7E9"/>
+                            <path d="M12.5144 9.2034L22.9385 0.536954C22.5357 0.287022 22.0687 0.160056 21.5949 0.171624H3.43795C2.97529 0.160672 2.51909 0.281763 2.12276 0.520717L12.5144 9.2034Z" fill="#FFF7E9"/>
+                        </svg>
+                        amalrp2299@gmail.com
+                </div>
+
+                <div id="Phone">
+                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.3206 31.7541C12.8888 31.7774 0.417986 19.1572 0.435565 2.86906C0.435565 1.80536 1.29786 0.938232 2.36156 0.938232H7.44495C8.39942 0.938232 9.21025 1.63954 9.3504 2.58367C9.68631 4.84646 10.3451 7.04935 11.3068 9.12507L11.5047 9.55225C11.7799 10.1462 11.5934 10.852 11.0606 11.2324C9.48637 12.3567 8.88474 14.6196 10.1112 16.3854C11.6502 18.6012 13.5902 20.5408 15.8055 22.0791C17.5712 23.3052 19.8338 22.7037 20.958 21.1297C21.3387 20.5967 22.0448 20.41 22.6392 20.6854L23.0644 20.8823C25.1403 21.8439 27.3433 22.5028 29.6063 22.8386C30.5505 22.9788 31.2515 23.7895 31.2515 24.744V29.8281C31.2515 30.8918 30.3871 31.7541 29.3234 31.7541L29.3206 31.7541Z" fill="#FFF7E9"/>
+                        </svg>
+                    +91 95397 25611
+                </div>
+
+                <svg id="ARP" width="54" height="38" viewBox="0 0 54 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M36.9148 8.89314H16.3202L21.1063 0.601898H32.128L36.9148 8.89314Z" fill="#FFF7E9"/>
+                    <path d="M42.1902 18.0311H21.4149L20.8936 18.9338L20.4307 19.7333L10.3653 37.1649H0L15.3384 10.5954H37.9014L42.1902 18.0311Z" fill="#FFF7E9"/>
+                    <path d="M47.4711 27.1746H30.5457L29.9596 28.1861L24.7786 37.1617H12.3313L22.3935 19.7317H43.1784L47.4711 27.1746Z" fill="#FFF7E9"/>
+                    <path d="M33.2817 28.8785L38.0677 37.1657H53.239L48.4546 28.8785H33.2817Z" fill="#FFF7E9"/>
+                </svg>
+
+            </div>
+
+            <form id="ContForm" onsubmit="SendMail(); reset(); return false;">
+
+                <h3>CONTACT US</h3>
+    
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Email ID" required>
+                <input type="text" id="phone" placeholder="Phone no. (optional)">
+                <textarea id="message" rows="5" placeholder="How can I help you?" required></textarea>
+                <button type="submit">SEND</button>
+    
+            </form>
         </div>
     </div>
 
-    <div class="BTM_image">
-        <img src="images/00115-2346302212-office chair stem (1).png" alt="#">
-    </div>
 
-    <script>
-        function scrolling(){
-        window.scrollTo(0,0);
-        }
-    </script>
+<script>
 
-    <script>
-        const header = document.querySelector("header");
+    function doDivsIntersect(div1, div2) {
+    const svgs = div1.querySelectorAll('svg');
 
-        window.addEventListener("scroll", function() {
-        if (window.pageYOffset > 0) {
-            header.classList.add("sticky");
+    let intersect = false;
+
+    function checkIntersection() {
+        const rect1 = div1.getBoundingClientRect();
+        const rect2 = div2.getBoundingClientRect();
+
+        const newIntersect = !(
+        rect1.bottom < rect2.top ||
+        rect1.right < rect2.left ||
+        rect1.left > rect2.right
+        );
+
+        if (newIntersect !== intersect) {
+        intersect = newIntersect;
+
+        if (intersect) {
+            svgs.forEach(svg => {
+            svg.style.filter = 'drop-shadow(0 0 5px black)';
+            });
         } else {
-            header.classList.remove("sticky");
+            svgs.forEach(svg => {
+            svg.style.filter = 'none';
+            });
         }
-        });
-    </script>
+        }
 
-    <script>
+        requestAnimationFrame(checkIntersection);
+    }
 
-        const intro = document.querySelector('.about_me_para');
-        const home = document.querySelector('.Name');
-        const work = document.querySelector('.CSCards')
-        const introHeader = document.querySelector('#ref2');
-        const homeHeader = document.querySelector('#ref1');
-        const workHeader = document.querySelector('#ref3');
-
-        const observer1 = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.intersectionRatio > 0) {
-            introHeader.style.color = '#AF4848';
-            introHeader.style.textDecoration = 'underline';
-            } else {
-            introHeader.style.color = 'rgba(175, 72, 72, 0.5)';
-            introHeader.style.textDecoration = 'none';
-            }
-        });
-        });
-
-        const observer2 = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.intersectionRatio > 0) {
-            homeHeader.style.color = '#AF4848';
-            homeHeader.style.textDecoration = 'underline';
-            } else {
-            homeHeader.style.color = 'rgba(175, 72, 72, 0.5)';
-            homeHeader.style.textDecoration = 'none';
-            }
-        });
-        });
-
-        const observer3 = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.intersectionRatio > 0) {
-            workHeader.style.color = '#AF4848';
-            workHeader.style.textDecoration = 'underline';
-            } else {
-            workHeader.style.color = 'rgba(175, 72, 72, 0.5)';
-            workHeader.style.textDecoration = 'none';
-            }
-        });
-        });
-
-        observer1.observe(intro);
-        observer2.observe(home);
-        observer3.observe(work)
-
-    </script>
-
-    <script>
-
-        const carouselWrapper = document.querySelector('.work');
-
-        let isDown = false;
-        let startX;
-        let scrollLeft;
-
-        carouselWrapper.addEventListener('mousedown', (e) => {
-        isDown = true;
-        startX = e.pageX - carouselWrapper.offsetLeft;
-        scrollLeft = carouselWrapper.scrollLeft;
-        carouselWrapper.classList.add('grabbing'); // add the grabbing class
-        });
-
-        carouselWrapper.addEventListener('mouseleave', () => {
-        isDown = false;
-        carouselWrapper.classList.remove('grabbing'); // remove the grabbing class
-        });
-
-        carouselWrapper.addEventListener('mouseup', () => {
-        isDown = false;
-        carouselWrapper.classList.remove('grabbing'); // remove the grabbing class
-        });
-
-        carouselWrapper.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - carouselWrapper.offsetLeft;
-        const walk = (x - startX) * 3;
-        carouselWrapper.scrollLeft = scrollLeft - walk;
-        });
+    requestAnimationFrame(checkIntersection);
+    }
 
 
-    </script>
+
+    const div1 = document.getElementById('Title');
+    const div2 = document.getElementById('RUBEX');
+
+    if (doDivsIntersect(div1, div2)) {
+    // The two divs intersect, and SVG fill color has been updated
+    } else {
+    // The two divs do not intersect, and SVG fill color has been reset
+    }
+</script>
+
+<script>
+
+    function Close(){
+
+        document.getElementById('ContactOverlay').style.display = "none";
+    }
+</script>
+
+<script>
+
+    var contact = document.getElementById('Mail')
+
+    contact.addEventListener('click', function handleclick(){
+
+        if(true){
+
+            document.getElementById('ContactOverlay').style.display = "flex";
+        }
+        else{
+
+            document.getElementById('ContactOverlay').style.display = "none";
+        }
+    })
+</script>
+
+<script>
+    function scrolling(){
+    window.scrollTo(0,0);
+    }
+</script>  
+
+
+<script>
+    var animation = bodymovin.loadAnimation({
+    container: document.getElementById('progress-bar1'),
+    path: 'Anim/ring1.json',
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    name: 'ring1 animation'
+    });
+
+    // Get the total number of frames in the animation
+    var totalFrames = animation.totalFrames;
+
+    // Pause the animation at its last frame
+    animation.goToAndStop(totalFrames, true);
+</script>
+
+<script>
+    var animation2 = bodymovin.loadAnimation({
+    container: document.getElementById('progress-bar2'),
+    path: 'Anim/ring2.json',
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    name: 'ring2 animation'
+    });
+
+    // Get the total number of frames in the animation
+    var totalFrames = animation2.totalFrames;
+
+    // Pause the animation at its last frame
+    animation2.goToAndStop(totalFrames, true);
+</script>
+
+<script>
+    var animation3 = bodymovin.loadAnimation({
+    container: document.getElementById('progress-bar3'),
+    path: 'Anim/ring3.json',
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    name: 'ring3 animation'
+    });
+
+    // Get the total number of frames in the animation
+    var totalFrames = animation3.totalFrames;
+
+    // Pause the animation at its last frame
+    animation3.goToAndStop(totalFrames, true);
+</script>
+
+<script>
+    // Create a new IntersectionObserver object
+    var observer = new IntersectionObserver(function(entries) {
+    // Loop through each entry in the observer
+    entries.forEach(function(entry) {
+    // If the entry is intersecting (i.e., in view)
+    if (entry.isIntersecting) {
+      // Play the animation
+      animation.play();
+    } else {
+      // Pause the animation
+      animation.pause();
+    }
+  });
+});
+
+
+// Select the animation container element
+var animationContainer = document.getElementById('progress-bar1');
+
+// Observe the animation container element
+observer.observe(animationContainer);
+
+</script>
+    
+<script>
+    // Create a new IntersectionObserver object
+    var observer = new IntersectionObserver(function(entries) {
+    // Loop through each entry in the observer
+    entries.forEach(function(entry) {
+    // If the entry is intersecting (i.e., in view)
+    if (entry.isIntersecting) {
+      // Play the animation
+      animation2.play();
+    } else {
+      // Pause the animation
+      animation2.pause();
+    }
+  });
+});
+
+
+// Select the animation container element
+var animationContainer2 = document.getElementById('progress-bar2');
+
+// Observe the animation container element
+observer.observe(animationContainer2);
+
+</script>
+
+<script>
+    // Create a new IntersectionObserver object
+    var observer = new IntersectionObserver(function(entries) {
+    // Loop through each entry in the observer
+    entries.forEach(function(entry) {
+    // If the entry is intersecting (i.e., in view)
+    if (entry.isIntersecting) {
+      // Play the animation
+      animation3.play();
+    } else {
+      // Pause the animation
+      animation3.pause();
+    }
+  });
+});
+
+
+// Select the animation container element
+var animationContainer3 = document.getElementById('progress-bar3');
+
+// Observe the animation container element
+observer.observe(animationContainer3);
+
+</script>
 
 </body>
 </html>

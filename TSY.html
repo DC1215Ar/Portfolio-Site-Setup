@@ -4,40 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tri-Star Yachts Project</title>
-    <link rel="stylesheet" href="css/TSY.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Tri-Star Yachts</title>
+    <link rel="stylesheet" href="CSS/TSY.css">
+    <link rel="icon" href="favicon.ico"/>
 </head>
 <body>
 
-    <button type="submit" onclick="scrolling();"  id="Top">
-        <img src="images/Top.svg" alt="#">
+    <button type="submit" onclick="scrolling()"  id="Top">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.40299 13.425L0.98999 12.01L6.99999 5.999L13.01 12.01L11.597 13.423L6.99699 8.823L2.39699 13.423L2.40299 13.425ZM2.40299 8.001L0.98999 6.585L6.99999 0.574997L13.01 6.585L11.597 7.999L6.99699 3.399L2.39699 7.999L2.40299 8.001Z" fill="#FFF7E9"/>
+        </svg>
     </button>
 
-    <button type="submit" onclick="location.href = 'index.html';"  id="Return">
-        <img src="images/Return.svg" alt="#">
+    <button type="submit" onclick="location.href = 'index.html'"  id="Return">
+        <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.0275 35.5608L37.547 23.0412C38.2454 22.343 39.3776 22.343 40.076 23.0412L52.5956 35.5608C52.931 35.8961 53.1196 36.351 53.1196 36.8253V53.9699C53.1196 54.9577 52.3188 55.7585 51.3311 55.7585H42.3885V43.2389H35.2345V55.7585H26.2919C25.3042 55.7585 24.5034 54.9577 24.5034 53.9699V36.8253C24.5034 36.351 24.692 35.8961 25.0275 35.5608Z" fill="#FFF7E9"/>
+        </svg>
     </button>
 
     <div id="TSY_imgs">
 
-        <img src="TSY images/TSY 1-100.jpg" alt="#">
-        <img src="TSY images/TSY 2-100.jpg" alt="#">
-        <img src="TSY images/TSY 3-100.jpg" alt="#">
-        <img src="TSY images/TSY 4-100.jpg" alt="#">
-        <img src="TSY images/TSY 5-100.jpg" alt="#">
-        <img src="TSY images/TSY 6-100.jpg" alt="#">
-        <img src="TSY images/TSY 8-100.jpg" alt="#">
-        <img src="TSY images/TSY 9-100.jpg" alt="#">
-        <img src="TSY images/TSY 10-100.jpg" alt="#">
+        <img src="Images/TSY images/TSY 1-100.jpg" alt="#">
+        <img src="Images/TSY images/TSY 2-100.jpg" alt="#">
+        <img src="Images/TSY images/TSY 3-100.jpg" alt="#">
+        <img src="Images/TSY images/TSY 4-100.jpg" alt="#">
+        <img src="Images/TSY images/TSY 5-100.jpg" alt="#">
+        <img src="Images/TSY images/TSY 6-100.jpg" alt="#">
+        <img src="Images/TSY images/TSY 8-100.jpg" alt="#">
+        <img src="Images/TSY images/TSY 9-100.jpg" alt="#">
+        <img src="Images/TSY images/TSY 10-100.jpg" alt="#">
 
     </div>
-    
-    <script>
-        function scrolling(){
-        window.scrollTo(0,0);
-        }
-    </script>
 
     <script>
 
@@ -46,13 +43,17 @@
         window.addEventListener("scroll", () => {
         if (window.scrollY > 800) {
             document.getElementById("Top").style.opacity = 100;
-            document.getElementById("Top").style.transition = 0.5;
+            document.getElementById("Top").style.transition = 1;
         } else {
             document.getElementById("Top").style.opacity = 0;
-            document.getElementById("Top").style.transition = 0.5;
+            document.getElementById("Top").style.transition = 1;
         }
         });
         
+        function scrolling(){
+            window.scrollTo(0,0);
+        }
     </script>
+    
 </body>
 </html>

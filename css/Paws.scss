@@ -1,8 +1,15 @@
-@import url("https://use.typekit.net/zhm2hsd.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html{
-    
+
     scroll-behavior: smooth;
+}
+
+body{
+
+    margin: 0px;
+
+    background-color: #37306B;
 }
 
 ::-webkit-scrollbar{
@@ -10,29 +17,24 @@ html{
 }
 
 ::-webkit-scrollbar-track {
-    background: #FFFBFA;
+    background: #fffbfa17;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #fc9e9e;
+    background: #66347F;
     border-radius: 10px;
 }  
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #d68484;
-}
-
-body{
-
-    background: #FFFBFA;
+    background: #9E4784;
 }
 
 #Top{
 
     position: fixed;
-    margin-left: 90vw;
-    margin-top: 70vh;
-    scale: .8;
+    margin-left: 92vw;
+    margin-top: 76vh;
+    scale: 1.5;
     border: none;
     background-color: transparent;
 
@@ -46,6 +48,8 @@ body{
 
     cursor: pointer;
 
+    z-index: 100;
+
 }
 
 #Return{
@@ -53,7 +57,7 @@ body{
     position: fixed;
     margin-left: 90vw;
     margin-top: 85vh;
-    scale: .8;
+    scale: .7;
     border: none;
     background-color: transparent;
 
@@ -63,12 +67,23 @@ body{
 
     cursor: pointer;
 
+    z-index: 99;
+
+
 }
 
 #Paws_imgs{
 
     display: flex;
     flex-direction: column;
-    align-content: center;
-    gap: 0px;
+    align-items: center;
+    
+ 
+    img{
+
+        width: 1000px;
+    }
+    
+    filter: drop-shadow(0px 6px 12px rgba(33, 5, 74, 0.818));
+
 }
